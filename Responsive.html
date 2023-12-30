@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>full stack development courses</title>
+  <style>
+    /* Internal CSS Styles */
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f0f0; 
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    nav {
+      background-color: #333; 
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav .logo {
+      float: left;
+      font-size: 24px;
+    }
+
+    nav .menu {
+      float: right;
+    }
+
+    nav .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: color 0.3s ease-in-out; /* Add transition effect for color change */
+    }
+
+    nav .menu a:hover {
+      color: red; /* Change color to red on hover */
+    }
+
+    .hamburger-menu {
+      display: none; /* Hide initially on larger screens */
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .banner {
+      background-image: url('your-banner-image.jpg');
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    /* Full Stack Development Section Styles */
+    .fullstack-section {
+      background-color: #ddd; /* Light gray background color */
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    /* About Us Section Styles */
+    #about-us-section {
+      display: none; /* Hide initially */
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Contact Section Styles */
+    #contact-section {
+      display: none; /* Hide initially */
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      width: 100%;
+    }
+    .footer-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .footer-images img {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <div class="logo">Responsive Landing Page <br>
+         full stack development Jalgaon</div>
+      <div class="menu">
+        <a href="#" onclick="showSection('home-section')">Home</a>
+        <a href="#" onclick="showSection('courses-section')">Courses</a>
+        <a href="#" onclick="showSection('about-us-section')">About Us</a>
+        <a href="#" onclick="showSection('contact-section')">Contact</a>
+      </div>
+      <div class="hamburger-menu">&#9776;</div>
+    </div>
+  </nav>
+  <!-- Banner Section -->
+  <section id="home-section" class="banner">
+    <h1>Welcome to fullstack</h1>
+    <p>Your gateway to knowledge and excellence.</p>
+  </section>
+  <!-- Full Stack Development Section -->
+  <section id="courses-section" class="fullstack-section">
+    <div class="container">
+      <img src="classr.JFIF" alt="our classroom">
+      <img src="full.JFIF" alt="our classroom">
+      <h2>Full Stack Development for Students</h2>
+      <p>Empower yourself with our Full Stack Development courses. Gain expertise in both frontend and backend technologies to become a versatile developer.</p>
+      <p>Explore a comprehensive curriculum, hands-on projects, and real-world applications. Prepare for a rewarding career in the world of web development.</p>
+    </div>
+  </section>
+  <!-- About Us Section -->
+  <section id="about-us-section">
+    <div class="container">
+      <!-- Add your About Us content here -->
+      <i><h2>Visit us</h2>
+      <p>if you want to create a website then visit in  this address or mail through
+      <br>Email: tanurajrajput41@gmail.com
+      <br><Address>Address: maharana pratap nagar yawal</Address>
+      </p></i>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <div class="container">
+      <!-- Add your Contact content here -->
+      <h2>Contact Us</h2>
+      <p>Phone: 770990....</p>
+      <p>Email: tanurajrajput41@gmail.com</p>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-images">
+      <img src="fb.jfif" alt="Image 1">
+      <img src="insta.jfif" alt="Image 2">
+      <img src="wp.png" alt="Image 3">
+    </div>
+    <p>&copy; 2023 responsive landing page. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script>
+    // Internal JavaScript for interactive components
+
+    // Example: Hamburger Menu Toggle
+    document.querySelector('.hamburger-menu').addEventListener('click', function () {
+      document.querySelector('.menu').classList.toggle('show-menu');
+    });
+
+    // Function to show/hide sections
+    function showSection(sectionId) {
+      // Hide all sections
+      document.getElementById('home-section').style.display = 'none';
+      document.getElementById('courses-section').style.display = 'none';
+      document.getElementById('about-us-section').style.display = 'none';
+      document.getElementById('contact-section').style.display = 'none';
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = 'block';
+
+      // Scroll to the selected section
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    // Add your JavaScript for other components here
+
+  </script>
+</body>
+
+</html>
